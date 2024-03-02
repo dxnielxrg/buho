@@ -1,0 +1,379 @@
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/014/995/804/non_2x/natural-landscape-cartoon-illustration-free-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 40px;
+    left: 5%;
+    color: #F0CA09;
+    animation-name: nombre;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+     font-family: "Crafty Beach", "Serenity", monospace;
+    font-size: 60px;
+     
+  }
+   @keyframes nombre {
+      0%{opacity: 1;}
+      100%{opacity: 0;}
+    }
+  
+  .container {
+    width: 400px;
+    height: 600px;
+    margin: 130px auto auto auto;
+  }
+  
+  .body {
+    position: relative;
+    left: 12%;
+    top: 15%;
+    bottom: 0;
+    right: 0;
+    width: 310px;
+    height: 420px;
+    background: #ee5c8b;
+    border-radius: 150px;
+  }
+  
+  .ear {
+    position: absolute;
+    background: pink;
+    top: -10px;
+    width: 120px;
+    height: 170px;
+  }
+  
+  .ear:nth-child(1) {
+    border-radius: 100% 0% 100% 0%;
+    transform: rotate(70deg);
+    left: 0;
+  }
+  
+  .ear:nth-child(2) {
+    border-radius: 0% 100% 0% 100%;
+    transform: rotate(-70deg);
+    right: 0;
+  }
+  
+  .eyesContainer {
+    
+    position: absolute;
+    top: 45px;
+    width: 180px;
+    height: 180px;
+    background: pink;
+    border-radius: 50%;
+    
+  }
+  
+  .eyesContainer:nth-child(3) {
+    left: 0px;
+  }
+  
+  .eyesContainer:nth-child(4) {
+    right: 0px;
+  }
+  
+  .eyesContainer::before {
+    content: '';
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    top: 20px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .eyesContainer:nth-child(3)::before {
+    left: 15px;
+  }
+  
+  .eyesContainer:nth-child(4)::before {
+    right: 15px;
+  }
+  
+  .eyesContainer::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: black;
+    z-index: 2;
+  }
+  
+  .eyesContainer:nth-child(3)::after {
+    left: 35px;
+  }
+  
+  .eyesContainer:nth-child(4)::after {
+    right: 35px;
+  }
+  
+  .pupil {
+    
+    position: absolute;
+    top: 60px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 5;
+    
+  }
+  
+  .eyesContainer:nth-child(3) .pupil {
+    left: 50px;
+    
+  }
+  
+  .eyesContainer:nth-child(4) .pupil {
+    
+    right: 80px;
+    
+  }
+  
+  .mouth {
+    position: absolute;
+    top: 190px;
+    left: 130px;
+    width: 50px;
+    height: 50px;
+    background: #f99525;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+  }
+  
+  .belly {
+    position: absolute;
+    top: 255px;
+    right: 29px;
+    border-radius: 50%;
+    width: 253px;
+    height: 166px;
+    background: pink;
+    clip-path: circle(52.8% at 50% 54%);
+  }
+  
+  .pens {
+    position: absolute;
+    top: 30px;
+    width: 52px;
+    height: 30px;
+    border-radius: 50%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid #bc26a1;
+  }
+  
+  .pens:nth-child(1) {
+    left: 70px;
+  }
+  
+  .pens:nth-child(2) {
+    left: 100px;
+  }
+  
+  .pens:nth-child(3) {
+    top: 60px;
+    left: 25px;
+  }
+  
+  .pens:nth-child(4) {
+    top: 60px;
+    left: 100px;
+  }
+  
+  .pens:nth-child(5) {
+    top: 60px;
+    left: 180px;
+  }
+  
+  .pens:nth-child(6) {
+    top: 90px;
+    left: 60px;
+  }
+  
+  .pens:nth-child(7) {
+    top: 90px;
+    left: 140px;
+  }
+  
+  .at {
+    position: absolute;
+    top: 210px;
+    width: 100px;
+    height: 120px;
+    left: -45px;
+    border-radius: 200% 200% 0px 0px;
+    background: #ee5c8b;
+    z-index: 5;
+  }
+  
+  .at:nth-child(6) {
+    transform: rotate(70deg);
+    animation: mymove 1s infinite;
+  }
+  
+  .at:nth-child(8) {
+    transform: rotate(140deg);
+    animation: mymove 1s infinite;
+  }
+  
+  .ats {
+    position: absolute;
+    top: 119px;
+    width: 35px;
+    height: 60px;
+    background: #f3bfe9;
+    border-radius: 0% 0% 50% 50%;
+  }
+  
+  .ats:nth-child(1) {
+    left: 32px;
+  }
+  
+  .ats:nth-child(2) {
+    left: 65px;
+  }
+  
+  .legs {
+    position: absolute;
+    top: 350px;
+    width: 20px;
+    height: 100px;
+    background: #f99525;
+    z-index: -1;
+  }
+  
+  .legs:nth-child(9) {
+    left: 110px;
+  }
+  
+  .legs:nth-child(10) {
+    right: 110px;
+  }
+  
+  .hoof {
+    position: absolute;
+    top: 80px;
+    width: 8px;
+    height: 18px;
+    background: #f99525;
+  }
+  
+  .hoof:nth-child(1) {
+    top: 77px;
+    left: -5px;
+    transform: rotate(50deg);
+  }
+  
+  .hoof:nth-child(2) {
+    left: 6px;
+    transform: rotate(50deg);
+  }
+  
+  .hoof:nth-child(3) {
+    top: 77px;
+    left: 17px;
+    transform: rotate(-50deg);
+  }
+  
+  
+  .corona {
+    position: absolute;
+    top: 190px;
+    left: 560px;
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    rotate: 180deg;
+    
+  }
+  .corona2 {
+    position: absolute;
+    top: 190px;
+    left: 600px;
+    width: 60px;
+    height: 50px;
+    background: yellow;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    rotate: 180deg;
+    
+  }
+  .corona3 {
+    position: absolute;
+    top: 190px;
+    left: 650px;
+    width: 55px;
+    height: 50px;
+    background: yellow;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    rotate: 180deg;
+  }
+  .bol{
+    width:15px;
+    height:15px;
+    border-radius: 100%;
+    background: red;
+    position: relative;
+    margin: auto;
+    bottom: 550px;
+    left: 44px;
+  }
+  
+  .bol2{
+    width:15px;
+    height:15px;
+    border-radius: 100%;
+    background: blue;
+    position: relative;
+    margin: auto;
+    bottom: 565px;
+    left: -3px;
+  }
+  
+  .bol3{
+    width:15px;
+    height:15px;
+    border-radius: 100%;
+    background: green;
+    position: relative;
+    margin: auto;
+    bottom: 580px;
+    left: -49px;
+  }
+  
+  .rama {
+    position: absolute;
+    top: 70px;
+    left: 850px;
+    width: 90px;
+    height: 750px;
+    background: #6E2C00;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    rotate: 180deg;
+  }
+  
+  .rama2 {
+    position: absolute;
+    top: 470px;
+    left: 650px;
+    width: 60px;
+    height: 400px;
+    background: #6E2C00;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    rotate: 85deg;
+  }
+   
+  
+  @keyframes mymove {
+    50% {
+      transform: rotate(120deg);
+    }
+}
